@@ -107,6 +107,10 @@ __webpack_require__.r(__webpack_exports__);
         context.height -= 10;
       }
       ;
+      const sounds = context.sounds;
+      const soundIndex = Math.floor(context.height / 10) % sounds.length; // Calculate sound index based on height
+
+      context.sound = sounds[soundIndex];
       if (context.height < 30) {
         context.backgroundColor = '#00FF00';
       } else if (context.height < 60) {

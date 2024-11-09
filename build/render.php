@@ -51,8 +51,8 @@ $context = array(
 		<div class="bar-graph">
 				<div class="bar" data-wp-style--height="context.height"></div>
 			</div>
-		<button data-wp-on--click="actions.toggleHeight">Increase</button>
-		<button data-wp-on--click="actions.decreaseNumber">Decrease</button>
+		<button data-wp-on--click="actions.toggleHeight">+</button>
+		<button data-wp-on--click="actions.decreaseNumber">-</button>
 	</div>
 	<div class="number">
 		<div>
@@ -64,6 +64,11 @@ $context = array(
 				class="sound" 
 				data-wp-text="context.sound"
 			></p>
+		<!-- <ul data-wp-context="context.sounds">
+			<template data-wp-each--sound="context.sounds">
+				<li data-wp-text="context.sound"></li>
+			</template>
+		</ul> -->
 		</div>	
 	</div>	
 </div>
